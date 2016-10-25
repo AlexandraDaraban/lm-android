@@ -32,8 +32,8 @@ android {
         applicationId "com.cypien.leroy"
         minSdkVersion 16
         targetSdkVersion 22
-        versionCode 15
-        versionName "1.0.14"
+        versionCode 16
+        versionName "2.0.0"
         multiDexEnabled true
     }
     buildTypes {
@@ -59,8 +59,6 @@ dependencies {
     compile 'com.sromku:simple-fb:4.1.1'
     compile 'com.joanzapata.pdfview:android-pdfview:1.0.4@aar'
     compile 'fr.avianey.com.viewpagerindicator:library:2.4.1@aar'
-    compile 'com.parse.bolts:bolts-android:1.+'
-    compile 'com.parse:parse-android:1.+'
     compile 'com.iainconnor:objectcache:0.0.18-SNAPSHOT'
     compile 'com.google.android.gms:play-services-analytics:9.0.0'
     compile 'com.google.code.gson:gson:2.6.2'

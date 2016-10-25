@@ -11,9 +11,7 @@ import com.google.android.gms.analytics.GoogleAnalytics;
 import com.google.android.gms.analytics.Tracker;
 import com.iainconnor.objectcache.CacheManager;
 import com.iainconnor.objectcache.DiskCache;
-import com.parse.Parse;
-import com.parse.ParseInstallation;
-import com.parse.ParsePush;
+
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -65,9 +63,7 @@ public class LeroyApplication extends Application {
     public void onCreate() {
         super.onCreate();
         Fabric.with(this, new Crashlytics());
-        Parse.initialize(this, "RfatUQhgwN4eeOo4kegWEcvNT6nExRl47MdTk88n", "KTT9oKDaxtDw947t8TUZm9zPHx0Z9CCSH1dps3Z6");
-        ParseInstallation.getCurrentInstallation().saveInBackground();
-        ParsePush.subscribeInBackground("", null);
+
         String cachePath = getCacheDir().getPath();
         File cacheFile = new File(cachePath + File.separator + "com.cypien.leroy");
         try {
